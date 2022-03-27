@@ -15,7 +15,7 @@ const fetchPokemon = () => {
         if (res.status != "200") {
             console.log(res);
             console.log('The pokemon does not exist, try again');
-            pokeImage("./imagenes/sad-pikachu.gif");
+            pokeImage("./images/sad-pikachu.gif");
         }
         else {
             return res.json();
