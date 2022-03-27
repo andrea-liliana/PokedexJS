@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./sheetStyle.css">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+</head>
+<body>
+
+    <div class="backgroundPokedexLeft">
+        <div class="centered">
+
+            <div class="selectionBox"><h2>Pokemon Selection</h1></div>
+
+            <div class="pokedexBox"><br>
+                
+                <div class="imageBorder"><img src="./imagenes/Pokeball.png" alt="Pokemon" id="pokeImg" width="240px"></div><br>
+                    
+                <div class="textPlacing">
+                    <h3 id="IDnumber">#</h3>
+                    <h3 id="Name">Name:</h3>
+                </div>
+                
+                <div class="attributesBorder">
+                <p id="pokemonType">Type: </p>
+                <p id="pokemonStats">Statistics: </p>
+                <p id="pokemonAttack">Attack: </p>
+                <p id="pokemonDefense">Defense: </p>
+                <p id="pokemonSpeed">Speed: </p>
+                </div><br>
+
+                <div class="textPlacing">
+                    <div class="attributesBorder2"><p id="Height">Height: </p></div>
+                    <div class="attributesBorder2"><p id="Weight">Weight: </p></div>
+                </div><br>
+                
+                <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+                <button onclick="fetchPokemon()">Choose Pokemon</button><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="backgroundPokedexRight">
+
+        <div class="centered">
+            <h1>Pokedex LaunchX</h1><br>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pokemon Type</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Normal</a>
+                        <a class="dropdown-item" href="#">Fire</a>
+                        <a class="dropdown-item" href="#">Grass</a>
+                        <a class="dropdown-item" href="#">Flying</a>
+                        <a class="dropdown-item" href="#">Fighting</a>
+                        <a class="dropdown-item" href="#">Poison</a>
+                        <a class="dropdown-item" href="#">Electric</a>
+                        <a class="dropdown-item" href="#">Ground</a>
+                        <a class="dropdown-item" href="#">Rock</a>
+                        <a class="dropdown-item" href="#">Psychic</a>
+                        <a class="dropdown-item" href="#">Ice</a>
+                        <a class="dropdown-item" href="#">Bug</a>
+                        <a class="dropdown-item" href="#">Ghost</a>
+                        <a class="dropdown-item" href="#">Steel</a>
+                        <a class="dropdown-item" href="#">Dragon</a>
+                        <a class="dropdown-item" href="#">Dark </a>
+                        <a class="dropdown-item" href="#">Fairy</a>
+                    </div>
+                  
+                </li>
+
+                <li class="nav-item dropdown">
+                    
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ability</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Adaptability</a>
+                      <a class="dropdown-item" href="#">Heatproof</a>
+                      <a class="dropdown-item" href="#">Multitype</a>
+                      <a class="dropdown-item" href="#">Rivalry</a>
+                      <a class="dropdown-item" href="#">Super Luck</a>
+                    </div>
+                  
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Moves</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Absorb</a>
+                    <a class="dropdown-item" href="#">10,000,000 Volt Thunderbolt</a>
+                    <a class="dropdown-item" href="#">Fairy Wind</a>
+                    <a class="dropdown-item" href="#">Discharge</a>
+                    <a class="dropdown-item" href="#">Fire Punch</a>
+                  </div>
+                </li>
+              
+            </ul>
+
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Pokemon" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav><br>
+          
+        
+        <div class="pokemonGrid-container">
+
+            <div class="grid-item">
+
+                <div class="centered"> 
+                
+                    <div class="textBox"><h3>#7 Squirtle <img src="./imagenes/Squirtle.jpg" id="Squirtle" width="100px"> </h3></div><br>
+
+                    <div class="textBox">
+                        <p>Type: Water</p>
+                        <p>Attack: 48</p>
+                        <p>Defense: 65</p>  
+                        <p>Speed: 43</p>
+                    </div>  
+                
+                </div>
+            
+            </div>
+            
+            <div class="grid-item">
+
+                <div class="centered"> 
+
+                    <div class="textBox"><h3>#26 Raichu <img src="./imagenes/Raichu.jpg" id="Raichu" width="100px"><br> </h3></div><br>
+
+                    <div class="textBox">
+                        <p>Type: Electric</p>
+                        <p>Attack: 90</p>
+                        <p>Defense: 55</p>  
+                        <p>Speed: 110</p>
+                    </div>  
+
+                </div>
+
+            </div>
+
+            <div class="grid-item">
+
+                <div class="centered"> 
+
+                    <div class="textBox"><h3>#133 Eevee <img src="./imagenes/Eevee.jpg" id="Eevee" width="100px"></h3></div><br>
+                    
+                    <div class="textBox">
+                        <p>Type: Normal</p>
+                        <p>Attack: 55</p>
+                        <p>Defense: 50</p>  
+                        <p>Speed: 55</p> 
+                    </div> 
+
+                </div>
+
+            </div>
+
+            <div class="grid-item">
+
+                <div class="centered"> 
+
+                    <div class="textBox"><h3>#39 Jigglypuff <img src="./imagenes/Jigglypuff.jpg" id="Jigglypuff" width="100px"></h3></div><br>
+                    
+                    <div class="textBox">
+                        <p>Type: Normal/Fairy</p>
+                        <p>Attack: 45</p>
+                        <p>Defense: 20</p>  
+                        <p>Speed: 20</p>  
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <div class="grid-item">
+
+                <div class="centered"> 
+
+                    <div class="textBox"><h3>#43 Oddish <img src="./imagenes/Oddish.jpg" id="Oddish" width="100px"></h3></div><br>
+                    
+                    <div class="textBox">
+                        <p>Type: Grass/Poison</p>
+                        <p>Attack: 50</p>
+                        <p>Defense: 55</p>  
+                        <p>Speed: 30</p>  
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="grid-item">
+
+                <div class="centered"> 
+
+                    <div class="textBox"><h3>#77 Ponyta <img src="./imagenes/Ponyta.jpg" id="Ponyta" width="100px"></h3></div><br>
+                    
+                    <div class="textBox">
+                        <p>Type: Fire</p>
+                        <p>Attack: 85</p>
+                        <p>Defense: 55</p>  
+                        <p>Speed: 90</p>  
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<footer>
+    <script src="./Pokedex.js"></script>
+</footer>
+
+</html>

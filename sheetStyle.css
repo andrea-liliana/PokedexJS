@@ -1,0 +1,93 @@
+.backgroundPokedexLeft{
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100%;
+    
+}
+
+.backgroundPokedexRight{
+    position: relative;
+    float: right;
+    width: 70%;
+    height: 100%;
+  }
+
+.centered {
+   top: 50%;
+   left: 50%;
+   text-align: center;
+}
+  
+.pokemonGrid-container {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: 30% 30% 30%
+}
+
+.textBox { 
+    text-align: center; 
+    font-weight: bold;
+    background: #eeeff3e0; 
+    overflow: hidden; 
+    border-radius: 0px 0px 0px 0px; 
+    -webkit-border-radius: 20px 20px 20px 20px; 
+}
+
+.selectionBox { 
+    text-align: center; 
+    font-weight: bold;
+    background: #eeeff3e0; 
+    overflow: hidden; 
+    margin-left: 2rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 20px 20px 20px 20px; 
+}
+
+.pokedexBox { 
+    text-align: center; 
+    font-weight: bold;
+    background: #f63a21e0; 
+    overflow: hidden; 
+    margin-left: 2rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px 10px 10px 10px; 
+    -webkit-border-radius: 30px 30px 30px 30px; 
+}
+
+.imageBorder {
+    border: 10px solid black;
+    background: #64d3ffe0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.textPlacing {
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto;
+}
+
+.attributesBorder {
+    border: 2px solid black;
+    background: #62d368e0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.attributesBorder2 {
+    border: 2px solid black;
+    background: #aeafaee0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
