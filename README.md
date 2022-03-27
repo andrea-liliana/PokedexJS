@@ -1,6 +1,6 @@
 # JavaScript Practice: Pokedex - Innovacción Virtual / Microsoft
 
-**Statement:** 
+## Statement:
 
 - Create the website layout in HTML.
 - Personal design of the Pokedex with CSS.
@@ -17,5 +17,6 @@
 - Bonus to deploy the pokedex.
 - Bonus of usage of other routes, like search by pokemon number or display a range of pokemons
 
- 
+
+## Result
 ![Pokedex LaunchX](https://user-images.githubusercontent.com/42507973/160290100-0b870705-398e-4c23-bdd4-75fc11fd4872.png)
