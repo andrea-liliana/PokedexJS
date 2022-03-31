@@ -15,7 +15,7 @@
 
 - Bonus if the website is responsive and can be consulted on the phone.
 - Bonus to deploy the pokedex.
-- Bonus of usage of other routes, like search by pokemon number or display a range of pokemons
+- Bonus of usage of other routes, like search by pokemon number or display a range of pokemons.
 
 
 ## Result
